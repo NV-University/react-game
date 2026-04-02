@@ -1,16 +1,22 @@
-import Board from '@/components/Board';
-import Layout from '@/components/Layout';
+import {createBrowserRouter} from 'react-router';
+import {RouterProvider} from 'react-router/dom';
 
-import {GameProvider} from '@/context';
+import GamePage from '@/pages/Game';
+import HomePage from '@/pages/Home';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    Component: HomePage,
+  },
+  {
+    path: '/game',
+    Component: GamePage,
+  },
+]);
 
 function App() {
-  return (
-    <Layout title="Main page">
-      <GameProvider>
-        <Board />
-      </GameProvider>
-    </Layout>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
