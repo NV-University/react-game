@@ -3,14 +3,15 @@ import {RouterProvider} from 'react-router/dom';
 
 import GamePage from '@/pages/Game';
 import HomePage from '@/pages/Home';
+import routes from '@/routes';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: routes.home,
     Component: HomePage,
   },
   {
-    path: '/game',
+    path: routes.game,
     Component: GamePage,
   },
 ]);

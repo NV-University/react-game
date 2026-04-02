@@ -1,6 +1,7 @@
 import {useNavigate} from 'react-router';
 
 import Layout from '@/components/Layout';
+import routes from '@/routes';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ function HomePage() {
   return (
     <Layout title="Home page">
       Hello!
-      <button onClick={() => navigate('/game', {replace: true})}>Start game</button>
+      <button onClick={() => navigate(routes.game)}>Start game</button>
     </Layout>
   );
 }
