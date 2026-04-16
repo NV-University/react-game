@@ -12,16 +12,21 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "2.11.2",
     "clsx": "2.1.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "react-router": "7.13.2"
+    "react-redux": "9.2.0",
+    "react-router": "7.13.2",
+    "redux": "5.0.1",
+    "redux-logger": "3.0.6"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
     "@types/node": "24.10.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
+    "@types/redux-logger": "3.0.13",
     "@vitejs/plugin-react": "5.1.1",
     "eslint": "10.0.2",
     "eslint-config-prettier": "10.1.8",
